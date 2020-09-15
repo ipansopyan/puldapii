@@ -22,13 +22,16 @@
 <body>
 
   <!-- navbar eyebrow -->
-  <nav class="eyebrow fixed-top navbar navbar-expand">
+  <nav class="eyebrow navbar fixed-top navbar-expand">
     <a class="navbar-brand" href="#"> <img src="/assets/img/Vector.png" class="img-fluid" alt=""> Download Amani
       Store App</a>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Tentang amani store</a>
+          <a class="nav-link" href="#">Tentang Amany Mart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tentang Puldapii Store</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Mulai Berjualan</a>
@@ -79,42 +82,6 @@
         </li>
         <li class="nav-item">
           <a href="" class="btn signin" data-toggle="modal" data-target="#exampleModalCenter">Masuk</a>
-          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5 class="m-signin"><a href="">Masuk</a></h5>
-                    </div>
-                    <div>
-                      <h5 class="m-signup"><a href="">Daftar</a></h5>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1">
-                    <small id="emailHelp" class="form-text text-muted">Contoh : mail@mail.com</small>
-                  </div>
-                  <p class="text-right"><a href="">Lupa Kata Sandi?</a></p>
-                  <button class="btn btn-block">selanjutnya</button>
-                  <div class="separator-modal">atau masuk dengan</div>
-
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn"><img src="/assets/img/google_icon.png" alt="">Google</button>
-                  <button type="button" class="btn"> <img src="/assets/img/facebook_icon.png" alt="">Facebook</button>
-                  <span>belum punya akun yaaaa <a href="">daftar</a> </span>
-                </div>
-              </div>
-            </div>
-          </div>
         </li>
         <li class="nav-item">
           <a href="" class="btn signup">Daftar</a>
@@ -123,6 +90,47 @@
     </div>
   </nav>
   <!-- end main navbar -->
+
+  <!-- modal -->
+  <section class="modal-login">
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h5 class="m-signin"><a href="">Masuk</a></h5>
+              </div>
+              <div>
+                <h5 class="m-signup"><a href="">Daftar</a></h5>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1">
+              <small id="emailHelp" class="form-text text-muted">Contoh : mail@mail.com</small>
+            </div>
+            <p class="text-right"><a href="">Lupa Kata Sandi?</a></p>
+            <button class="btn btn-block">selanjutnya</button>
+            <div class="separator-modal">atau masuk dengan</div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn"><img src="/assets/img/google_icon.png" alt="">Google</button>
+            <button type="button" class="btn"> <img src="/assets/img/facebook_icon.png" alt="">Facebook</button>
+            <span>Belum Punya Akun Amany Mart? <a href="">daftar</a> </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end modal -->
 
   <!-- hero image -->
   <section class="hero-img banner">
@@ -332,7 +340,7 @@
       <div class="d-flex justify-content-between">
         <div>
           <h5 class="heading1">
-            Flash Sale
+            Belanja Cepat
             <span class="small-text">berakhir dalam</span>
             <span class="count">24</span>
             <span class="dot"> : </span>
@@ -358,7 +366,23 @@
                 <div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="76" aria-valuemin="0"
                   aria-valuemax="100"></div>
               </div>
-              <span class="bid-count">harga bid tertinggi Rp 2.100.000</span>
+              <span class="bid-count">Habis Terjual</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <img src="/assets/img/monil.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Mini Cooper Morris Tahun 1994 Mesin Bertenaga</p>
+              <span class="percent"> 35% </span>
+              <span class="count-slash"><del>Rp.25.000</del> </span>
+              <span class="price d-block ">Rp.19.000</span>
+              <div class="progress" style="height: 2px;">
+                <div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="76" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+              <span class="bid-count">Terjual Sebagian</span>
             </div>
           </div>
         </div>
@@ -390,23 +414,7 @@
                 <div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="76" aria-valuemin="0"
                   aria-valuemax="100"></div>
               </div>
-              <span class="bid-count">harga bid tertinggi Rp 2.100.000</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="/assets/img/monil.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Mini Cooper Morris Tahun 1994 Mesin Bertenaga</p>
-              <span class="percent"> 35% </span>
-              <span class="count-slash"><del>Rp.25.000</del> </span>
-              <span class="price d-block ">Rp.19.000</span>
-              <div class="progress" style="height: 2px;">
-                <div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="76" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-              <span class="bid-count">harga bid tertinggi Rp 2.100.000</span>
+              <span class="bid-count">Terjual banyak</span>
             </div>
           </div>
         </div>
@@ -841,7 +849,7 @@
     <div class="container">
       <div class="d-flex justify-content-between">
         <div>
-          <h5 class="heading1">Semua Product</h5>
+          <h5 class="heading1">Semua Produk</h5>
         </div>
         <div>
           <h5 class="heading2">Lihat Semua</h5>
@@ -1312,14 +1320,14 @@
       <div class="row">
         <div class="col-2">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item title">Amani Store</li>
-            <li class="list-group-item"><a href="#">Tentang amani store</a></li>
+            <li class="list-group-item title">Amany Mart</li>
+            <li class="list-group-item"><a href="#">Tentang amany mart</a></li>
             <li class="list-group-item"><a href="#">Karir</a></li>
             <li class="list-group-item"><a href="#">Blog</a></li>
             <li class="list-group-item"><a href="#">Official Store</a></li>
           </ul>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item title">Koperasi PULDAPII</li>
+            <li class="list-group-item title">PULDAPII Store</li>
             <li class="list-group-item"><a href="#">Tentang koperasi PULDAPII</a></li>
             <li class="list-group-item"><a href="#">Daftar Menjadi Anggota</a></li>
           </ul>
@@ -1362,7 +1370,7 @@
         </div>
       </div>
       <div class="copyright text-center">
-        <p>&copy; 2020, PT.Amani Store </p>
+        <p>&copy; 2020, PT.Amani Mart </p>
       </div>
     </div>
   </section>

@@ -106,31 +106,31 @@ select {
   max-width: 400px;
   padding: 25px 30px;
 }
-.main-navbar .modal .modal-header {
+.modal-login .modal .modal-header {
   border-bottom: unset;
   padding: 1rem 1rem 0 1rem !important;
 }
-.main-navbar .modal label,
-.main-navbar .modal .btn-block {
+.modal-login .modal label,
+.modal-login .modal .btn-block {
   color: #7B7B7B;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
 }
-.main-navbar .modal small,
-.main-navbar .modal p.text-right,
+.modal-login .modal small,
+.modal-login .modal p.text-right,
 .separator-modal,
-.main-navbar .modal-footer button,
-.main-navbar .modal-footer span {
+.modal-login .modal-footer button,
+.modal-login .modal-footer span {
   font-size: 11px;
   line-height: 16px;
 }
-.main-navbar .modal .btn-block {
+.modal-login .modal .btn-block {
   background-color: #E6E6E6;
   color: #A6A6A6;
   padding: 8px 75px;
 }
-.main-navbar .modal p.text-right a {
+.modal-login .modal p.text-right a {
   color: #008C8C;
   font-weight: 500;
 }
@@ -152,47 +152,47 @@ select {
 .separator-modal::after {
   margin-left: .25em;
 }
-.main-navbar .modal .modal-body .m-signin a {
+.modal-login .modal .modal-body .m-signin a {
   color: #31353B;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
 }
-.main-navbar .modal .modal-body .m-signup a {
+.modal-login .modal .modal-body .m-signup a {
   color: #008C8C;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
 }
-.main-navbar .modal .modal-body .d-flex {
+.modal-login .modal .modal-body .d-flex {
   margin-bottom: 49px;
 }
-.main-navbar .modal .modal-body button {
+.modal-login .modal .modal-body button {
   margin-bottom: 30px;
 }
-.main-navbar .modal .modal-body .form-group {
+.modal-login .modal .modal-body .form-group {
   margin-bottom: 15px;
 }
-.main-navbar .modal-footer {
+.modal-login .modal-footer {
   justify-content: center;
   border-top: unset;
 }
-.main-navbar .modal-footer button {
+.modal-login .modal-footer button {
   border: 1px solid #D9D9D9;
   padding: 9px 15px;
   color: #6E6E6E;
 }
-.main-navbar .modal-footer button img {
+.modal-login .modal-footer button img {
   margin-right: 12px;
   max-width: 12px;
 }
-.main-navbar .modal-footer span {
+.modal-login .modal-footer span {
   width: 100%;
   text-align: center;
   color: #6E6E6E;
   margin-top: 25px;
 }
-.main-navbar .modal-footer span>a {
+.modal-login .modal-footer span>a {
   color: #008C8C;
 }
 .main-navbar ul li.image {
@@ -255,11 +255,30 @@ font-weight: 500;
 .category .owl-next {
   right: 0;
 }
+.owl-carousel .owl-nav button.owl-prev {
+  margin-left: 25px;
+  transition: .5s;
+  opacity: 0;
+}
+.owl-carousel .owl-nav button.owl-next {
+  margin-right: 25px;
+  transition: .5s;
+  opacity: 0;
+}
+.owl-carousel:hover .owl-nav button.owl-next {
+  margin-right: unset;
+  opacity: 1;
+}
+.owl-carousel:hover .owl-nav button.owl-prev {
+  margin-left: unset;
+  opacity: 1;
+}
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel button.owl-dot {
   color: #7B7B7B !important;
   font-size: 12px !important;
+  outline: none;
 }
 .owl-carousel .owl-nav button.owl-next:hover,
 .owl-carousel .owl-nav button.owl-prev:hover {
@@ -540,7 +559,7 @@ font-weight: 500;
     flex-basis: 20%;
     max-width: 20%;
     display: block;
-    padding-right: 30px;
+    padding-right: 10px;
   }
   .logged img {
     width: 44px;
@@ -561,6 +580,12 @@ font-weight: 500;
     display: flex !important;
     align-items: stretch;
     width: 100%;
+  }
+  .logged .list-group-item .head {
+    color: #626262;
+  }
+  .logged .list-group-item svg {
+    margin-right: 10px;
   }
   .logged .collapses div span {
     flex: 1;
@@ -722,6 +747,14 @@ font-weight: 500;
   .single-product .main-product {
     display: flex;
   }
+  .single-product .main-product .main-product-info-label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .single-product .main-product .main-product-info-label img {
+    margin-left: auto;
+  }
   .single-product .main-product .colour span.name-colour{
     font-size: 12px;
     line-height: 18px;
@@ -872,6 +905,11 @@ font-weight: 500;
   .nav-secondary .nav-item:hover a{
     color: #008C8C;
     border-bottom: 2px solid #008C8C;
+  }
+  .nav-secondary .nav-item  a.btn {
+    border: 1px solid #D9D9D9;
+    padding: none;
+    margin-left: 18px;
   }
   .description p {
     font-size: 12px;
@@ -1035,6 +1073,7 @@ font-weight: 500;
   .riview .media .media-footer a {
     border: 1px solid #C4C4C4;
     margin: 5px 15px;
+    color: #939393;
   }
   .riview .media-riview .media {
     display: block;
@@ -1189,6 +1228,7 @@ font-weight: 500;
     border: 1px solid #E6E6E6;
     box-sizing: border-box;
     border-radius: 6px;
+    color: #939393;
   }
   .riview .media-home a.report {
     font-weight: 600;
@@ -1260,6 +1300,9 @@ font-weight: 500;
     border-radius: 4px;
     margin: 24px auto;
     padding: 16px 30px;
+  }
+  .riview .media-two img {
+    
   }
   .riview .media-two h5.name {
     font-weight: 600;
