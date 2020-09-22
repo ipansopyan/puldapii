@@ -63,7 +63,7 @@
           <input type="text" class="form-control" aria-describedby="button-addon2">
           <div class="input-group-append">
             <button class="btn btn-search" type="button" id="button-addon2">
-              <span class="icon-search" ><i class="fas fa-search"></i></span>
+              <span class="icon-search"><i class="fas fa-search"></i></span>
             </button>
           </div>
         </div>
@@ -104,45 +104,50 @@
   </nav>
   <!-- end main navbar -->
 
-
-  <section class="cart">
+  <!-- input with header -->
+  <section class="cart-header cart">
     <div class="container">
       <div class="row">
         <div class="col-7">
-          <div class="head">
-            <div class="input-all">
-              <input id="box-cart" type="checkbox" />
-              <label for="box-cart">pilih Semua Barang</label>
+          <div class="cart-head">
+            <h5 class="checkout">Checkout</h5>
+            <h5 class="address">Alamat Pengiriman</h5>
+            <hr class="borderless">
+            <h5 class="name">Irwansyah (Rumah) <span class="utama">Utama</span></h5>
+            <div class="phone-road">
+              <span class="phone">081234567890</span>
+              <span class="road">Jl. Pramuka, Gg. H. Sueib No. 27 RT 004 RW 016 ada pohon Kecapi Cempaka Putih, Kota
+                Jakarta Pusat,
+                10520</span>
             </div>
-            <a class="delete" href="">Hapus</a>
           </div>
+          <hr class="borderless">
+          <button class="btn other-address">Pilih Alamat Lain</button>
+          <button class="btn other-address">Kirim ke Beberapa Alamat</button>
           <hr>
-          <div class="input-seller">
-            <input id="box-cart2" type="checkbox" />
-            <label for="box-cart2">‘Auf Collection<span>Jakarta Utara</span> </label>
-          </div>
+          <h5 class="name">‘Auf Collection</h5>
+          <span>Jakarta Utara</span>
           <div class="input-goods">
-            <input id="box-cart3" type="checkbox" />
-            <label for="box-cart3"></label>
             <img src="/assets/img/kipas.png" alt="">
             <div class="name-count">
               <h5 class="name">Kurta Motif Tunik Bahan Adem</h5>
-              <h5 class="count">Rp 187.000</h5>
-            </div>
-          </div>
-          <div class="note">
-            <span class="write">Tulis Catatan untuk Toko</span>
-            <div class="icon">
-              <a href=""><span><i class="fas fa-heart"></i></span></a>
-              <a href=""><span><i class="fas fa-trash"></i></span></a>
-              <div class="plus-minus">
-                <a href=""><span class="minus"><i class="fas fa-minus-circle"></i></span></a>
-                <span><input value="1" type="text" class="text-control"></span>
-                <a href=""><span class="plus active"><i class="fas fa-plus-circle"></i></span></a>
-              </div>
+              <h5 class="count">Rp 180.000</h5>
+              <span>1 barang (400 gr)</span>
             </div>
           </div>
           <hr>
+          <div class="count-total">
+            <h5 class="summary">Subtotal</h5>
+            <h5 class="final-count">Rp 187.000</h5>
+          </div>
+          <div class="count-total">
+            <span class="total">Total Harga (1 produk)</span>
+            <span>Rp 187.000</span>
+          </div>
+          <div class="count-total">
+            <span class="total">Ongkos Kirim</span>
+            <span>Rp 10.000</span>
+          </div>
         </div>
         <div class="col-5">
           <div class="promo">
@@ -152,7 +157,7 @@
             </div>
             <hr>
             <h5 class="summary">Ringkasan Belanja</h5>
-            <div class="count-total" >
+            <div class="count-total">
               <h5 class="total">Total Harga</h5>
               <h5 id="count-end" class="count">Rp 187.000</h5>
             </div>
@@ -163,6 +168,7 @@
       </div>
     </div>
   </section>
+  <!-- end input with header -->
 
   <!-- Modal -->
   <div class="modal-cart">
