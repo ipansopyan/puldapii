@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<head>
+  <title>jQuery uploadHBR Plugin Example</title>
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"
+    type="text/css" /> -->
+  <link href="/assets/css/style.min.css" rel="stylesheet" type="text/css" />
+  <!-- <script src="/assets/js/jquery-3.5.1.slim.min.js"></script> -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome.css">
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- navbar eyebrow -->
+  <nav class="eyebrow navbar fixed-top navbar-expand">
+    <a class="navbar-brand" href="#"> <img src="/assets/img/Vector.png" class="img-fluid" alt=""> Download Amani
+      Store App</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tentang Amany Mart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tentang Puldapii Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mulai Berjualan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Promo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Donasi</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end navbar eyebrow -->
+
+  <!-- main navbar -->
+  <nav class="main-navbar fixed-top navbar navbar-expand">
+    <a class="navbar-brand" href="#"> <img src="/assets/img/Logo-Puldapii-tanpa-arab300 1.png"></a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kategori</a>
+        </li>
+      </ul>
+      <form class="form-inline ml-auto">
+        <div class="input-group">
+          <input type="text" class="form-control" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-search" type="button" id="button-addon2">
+              <span class="icon-search"><i class="fas fa-search"></i></span>
+            </button>
+          </div>
+        </div>
+        <div class="trending">
+          <a href="">Kurta</a>
+          <a href="">Beras</a>
+          <a href="">Gamis</a>
+          <a href="">Kitab</a>
+          <a href="">Masker</a>
+          <a href="">Hijab</a>
+          <a href="">Laptop</a>
+        </div>
+      </form>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+        <li class="nav-item">
+          <div class="separator"></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+        <li class="nav-item image">
+          <img class="rounded-circle" src="/assets/img/Ellipseku.png" alt="">
+          <span>Toko</span>
+        </li>
+        <li class="nav-item image">
+          <img class="rounded-circle" src="/assets/img/Ellipse2.png" alt="">
+          <span class="name">Name</span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end main navbar -->
+
+  <section class="upload-product">
+    <div class="container">
+      <div class="row">
+        <form role="form" action="#" method="post" enctype="multipart/form-data">
+          <div class="banner">
+            <h3 class="form-label">Upload Produk<span>wajib</span> </h3>
+            <div class="desc">
+              <p class="text-left">Format gambar .jpg .jpeg .png dan ukuran minimum 300 x 300px (Untuk gambar
+                optimal gunakan ukuran 700 x700)</p>
+            </div>
+            <div id="uploads">
+              <!-- Upload Content -->
+            </div>
+            <div class="banner-foot">
+              <div class="upload-btn-wrapper">
+                <button class="btn">+ Pilih Gambar Produk</button>
+                <input type="file" name="myfile" />
+                <p class="text-left">atau tarik dan letakkan hingga 5 gambar sekaligus di sini</p>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+
+          <div class="banner">
+            <h3 class="form-label">Upload Produk</h3>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="inputEmail3">Nama Produk <span>Wajib</span> </label>
+                <span>Nama Produk min. 5 kata dan terdiri
+                  dari jenis produk, merek, dan
+                  keterangan seperti warna, bahan,
+                  atau tipe.</span>
+              </div>
+              <div class="input-form">
+                <input type="email" class="form-control" id="inputEmail3"
+                  placeholder="Contoh: Sepatu Pria (Jenis/Kategori Produk) + Tokostore (Merek) + Kanvas Hitam (Keterangan)">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="Kategori" class="col-form-label">Kategori<span>Wajib</span> </label>
+              </div>
+              <div class="input-form">
+                <select id="Kategori" class="form-control">
+                  <option disabled>Pilih Kategori</option>
+                  <option>Elektronik</option>
+                  <option>Fashion</option>
+                  <option>Makanan</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="etalase" class="col-form-label">Etalase<span>Wajib</span> </label>
+              </div>
+              <div class="input-form">
+                <select id="etalase" class="form-control etalase">
+                  <option>Pilih Etalase</option>
+                  <option>Etalas 1</option>
+                  <option>Etalas 2</option>
+                  <option>Etalas 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-12 banner">
+            <h3 class="form-label">Deskripsi Produk</h3>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="inputEmail3" class="col-form-label">Kondisi</label>
+              </div>
+              <div class="col-10 input-form">
+                <div class="form">
+                  <div class="form-head">
+                    <label class="contain">
+                      <input value="baru" checked type="radio" name="kondisi">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="value">Baru</span>
+                  </div>
+                  <div class="form-head">
+                    <label class="contain">
+                      <input value="bekas" type="radio" name="kondisi">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="value">Bekas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="Kategori" class="col-form-label">Kategori<span>Wajib</span> </label>
+                <span class="span-textarea">Nama Produk min. 5 kata dan terdiri
+                  dari jenis produk, merek, dan
+                  keterangan seperti warna, bahan,
+                  atau tipe.</span>
+              </div>
+              <div class="col-10 input-form">
+                <textarea placeholder="Sepatu Sneakers Pria Tokostore Kanvas Hitam Seri C28B
+
+                - Model Simple
+                - Nyaman Digunakan
+                - Tersedia warna hitam
+                - Sole PVC (injection shoes) yang nyaman awet untuk digunakan sehari - hari
+                
+                Bahan:
+                Upper: Semi Leather (kulit tidak pecah - pecah)
+                Sole: Premium Rubber Sole
+                
+                Ukuran
+                39 : 25,5 cm
+                40 : 26 cm
+                41 : 26,5 cm
+                " class="form-control" id="exampleFormControlTextarea1" rows="15"></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="etalase" class="col-form-label">Vieo Produk <small>(Opsional)</small></label>
+                <span>URL video yang didukung saat ini
+                  adalah URL video dari <a href=""> Youtube. Info
+                  Lengkap</a></span>
+              </div>
+              <div class="col-5 input-form">
+                <select id="etalase" class="form-control etalase">
+                  <option>Pilih Etalase</option>
+                  <option>Etalas 1</option>
+                  <option>Etalas 2</option>
+                  <option>Etalas 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 banner">
+            <h3 class="form-label">Upload Produk</h3>
+            <div class="form-group">
+              <div class="form-desc varian">
+                <label for="inputEmail3" class="col-9 col-form-label"></label>
+                <span class="span-varian">Aktifkan Varian Produk agar memudahkan pembeli cek stok produkmu. Tambahkan
+                  detail varian seperti warna, ukuran,
+                  atau pilihan varian lainnya, Varian Produk tersedia untuk kategori tertentu, <a href=""> Pilih
+                    Kategori</a> Produk
+                  sekarang</span>
+              </div>
+              <div class="input-form">
+                <button class="btn btn-light plus" type="button">+ Tambah Varian Video</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 banner">
+            <h3 class="form-label">Deskripsi Produk</h3>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="inputEmail3" class="col-form-label">Staus Produk</label>
+                <span>Jika status aktif, produkmu dapat
+                  dicari oleh calon pembeli.</span>
+              </div>
+              <div class="col-10 input-form">
+                <div class="form">
+                  <div class="form-head">
+                    <div class="onoffswitch">
+                      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                      <label class="onoffswitch-label" for="myonoffswitch">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="Kategori" class="col-form-label">Stok Produk</label>
+              </div>
+              <div class="col-10 input-form">
+                <input type="email" class="form-control stok" id="inputEmail3" placeholder="Masukan Jumlah Stok">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="Kategori" class="col-form-label">SKU (Stock Keeping Unit)</label>
+                <span>Gunakan SKU untuk menambahkan
+                  kode unik pada produk ini.</span>
+              </div>
+              <div class="col-10 input-form">
+                <input type="email" class="form-control stok" id="inputEmail3" placeholder="Masukan SKU">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 banner">
+            <h3 class="form-label">Deskripsi Produk</h3>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="Kategori" class="col-form-label">Minimum Pemesanan</label>
+                <span>Atur jumlah minimum yang harus
+                  dibeli untuk produk ini.</span>
+              </div>
+              <div class="col-10 input-form">
+                <input type="email" class="form-control stok" id="inputEmail3" placeholder="1">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="Kategori" class="col-form-label">Harga Satuan <span>Wajib</span></label>
+              </div>
+              <div class="col-10 input-form form-count">
+                <span>Rp</span>
+                <input type="email" class="form-control stok" id="inputEmail3" placeholder="Masukan Harga">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="Kategori" class="col-form-label">Harga Grosir</label>
+                <span>Tambahkan harga grosir untuk
+                  pembelian produk dalam jumlah
+                  tertentu.</span>
+              </div>
+              <div class="col-10 input-form">
+                <button class="btn btn-light plus-grosir" type="button">+ Tambah Varian Video</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 banner">
+            <h3 class="form-label">Berat & Pengiriman</h3>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="inputEmail3" class="col-form-label">Asuransi Pengiriman</label>
+                <span>Aktifkan jaminan kerugian,
+                  kerusakan & kehilangan atas
+                  pengiriman produk ini.</span>
+              </div>
+              <div class="col-10 input-form">
+                <div class="form">
+                  <div class="form-head">
+                    <label class="contain">
+                      <input value="iya" checked type="radio" name="asuransi">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="value">Opsional</span>
+                  </div>
+                  <div class="form-head">
+                    <label class="contain">
+                      <input value="tidak" type="radio" name="asuransi">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="value">Ya</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="inputEmail3" class="col-form-label">Layanan Pengiriman</label>
+                <span>Atur layanan pengiriman sesuai jenis
+                  produkmu</span>
+              </div>
+              <div class="col-10 input-form">
+                <div class="form">
+                  <div class="form-head">
+                    <label class="contain">
+                      <input value="1" checked type="radio" name="layanan">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="value">Standard</span>
+                  </div>
+                  <div class="form-head">
+                    <label class="contain">
+                      <input value="2" type="radio" name="layanan">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="value">Custom</span>
+                  </div>
+                  <div class="form-head">
+                    <label class="contain">
+                      <input value="3" type="radio" name="layanan">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="value">Bisa COD oleh Kurir sendiri</span>
+                  </div>
+                </div>
+                <small>Layanan pengiriman untuk produk ini akan disamakan dengan yang ada di Pengaturan
+                  Pengiriman.</small>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-desc">
+                <label for="inputEmail3" class="col-form-label">Preorder</label>
+              </div>
+              <div class="col-10 input-form">
+                <div class="form">
+                  <div class="form-head">
+                    <div class="onoffswitch">
+                      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2"
+                        checked>
+                      <label class="onoffswitch-label" for="myonoffswitch2">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="button-footer">
+        <button id="reset" type="button" class="btn cancel">Batal</button>
+        <button type="submit" class="btn add">Simpan & Tambah Baru</button>
+        <button type="submit" class="btn save">Simpan</button>
+      </div>
+      </form>
+    </div>
+  </section>
+  <br><br><br><br><br><br>
+  <!-- <script src="/assets/js/bootstrap.min.js"></script> -->
+  <!-- <script src="/assets/js/popper.min.js"></script> -->
+  <script src="/assets/js/all.js"></script>
+  <!-- <script src="/assets/js/style.js"></script> -->
+  <!-- owl carousel -->
+  <!-- <script src="assets/js/owl.carousel.min.js"></script> -->
+</body>
+
+</html>
